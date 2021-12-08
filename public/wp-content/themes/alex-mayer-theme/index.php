@@ -8,15 +8,16 @@
   <?php body_class(); ?>
   <?php //get_header(); ?>
   <?php
-if (have_posts()) {
-    while (have_posts()) {
-        the_post();
-    }
-} else {
-    echo "Kein Inhalt";
-}
-?>
-<?php include 'header.php';?>
+  if (have_posts()) {
+      while (have_posts()) {
+          the_post();
+      }
+  } else {
+      echo "Kein Inhalt";
+  }
+  ?>
+
+  <?php include 'header.php';?>
   
   <main>
     <section id="maincontents" class="maxwidth-container">
@@ -76,7 +77,6 @@ if (have_posts()) {
       </section>
 
       <section id="news" class="max-container-width">
-
         <h3 class="news__heading">News</h3>
         <div class="news__container">
           <?php
@@ -102,12 +102,8 @@ if (have_posts()) {
 
       <?php include 'references.php';?>
 
-
-      <?php
-    }
-    ?>
+    <?php } //if is front page end ?>
     
-
   </main>
   <?php include 'footer.php';?>
 </body>
