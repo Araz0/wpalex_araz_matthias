@@ -1,0 +1,51 @@
+#hero {
+  width: 100%;
+  height: clamp(14rem, 35vw, 30rem);
+  background-image: url('images/illuminated-keyboard.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+
+  .hero__heading {
+    color: $blue;
+    line-height: 175%;
+    font-size: $h1-size-small;
+
+    span {
+      padding: 0.25rem;
+      background-color: white;
+    }
+  }
+
+  .hero__button {
+    background-color: $green;
+    color: white;
+    border-radius: $bRadius;
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+    border: none;
+  }
+
+  @media (min-width: 768px) {
+    .hero__heading,
+    .hero__button {
+      margin-left: 50%;
+    }
+
+    .hero__button {
+      padding: 1rem;
+      font-size: 1.5rem;
+      width: 15em;
+    }
+  }
+  @media (min-width: 960px) {
+    .hero__heading {
+      font-size: $h1-size;
+    }
+  }
+}

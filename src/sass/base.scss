@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+button {
+  font-family: 'Slabo 13px', serif;
+}
+
+.max-container-width {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: $h1-size;
+  color: $blue;
+}
+
+h3 {
+  font-size: $h3-size-small;
+  line-height: 150%;
+  margin-bottom: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}

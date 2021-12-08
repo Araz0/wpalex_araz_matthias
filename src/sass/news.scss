@@ -1,0 +1,19 @@
+#news {
+  .news__container {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $light-red;
+    border-radius: $bRadius;
+
+    &__item {
+      margin-bottom: 0.5rem;
+      line-height: 125%;
+      a {
+        color: $blue;
+      }
+      h4,p{
+        display: inline;
+      }
+    }
+  }
+}
