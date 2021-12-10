@@ -65,7 +65,7 @@
                     <a href="<?php the_permalink(); ?>">
                     <?php the_title(); ?>
                     </a> - 
-                    <?php the_content(); ?>
+                    <?php the_excerpt(); ?>
                   </h4>
                   
                 </article>
