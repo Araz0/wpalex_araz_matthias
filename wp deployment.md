@@ -4,5 +4,5 @@
 [x] Main Menu
 [ ] Footer Manu
 [ ] Footer Content - Dynamic
-[ ] blog page design
-[ ] single pages content styling
+[x] blog page design
+[x] single pages content styling
