@@ -1,5 +1,5 @@
 <header id="header">
-    <a href="/"><h1 class="header__logo">Alex Mayer</h1></a>
+    <a href="/"><h1 class="header__logo"><?php echo get_bloginfo('name'); ?></h1></a>
 
     <div class="header__hamburger" role="button">
       <input type="checkbox" />

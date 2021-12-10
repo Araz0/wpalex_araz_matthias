@@ -18,6 +18,7 @@
 
   // Remove p tags from category description
   remove_filter('term_description','wpautop');
+
   function register_my_menus(){
     register_nav_menus(
       array(
