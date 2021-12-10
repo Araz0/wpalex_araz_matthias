@@ -1,5 +1,5 @@
 <header id="header">
-    <h1 class="header__logo">Alex Mayer</h1>
+    <a href="/"><h1 class="header__logo">Alex Mayer</h1></a>
 
     <div class="header__hamburger" role="button">
       <input type="checkbox" />

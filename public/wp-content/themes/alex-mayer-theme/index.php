@@ -16,18 +16,12 @@
         }
         echo '<img class="hero__thumbnail" src="'. $thumbnail_Link.'" alt="Page Thumbnail image">';
         ?>
-        <?php if (is_front_page()) { ?>
           <h2 class="hero__heading">
             <span>Glänzende Ideen</span> <br />
             <span>für leuchtende Augen</span>
           </h2>
           <button class="hero__button">Angebot einholen</button>
-        <?php } ?>
       </section>
-    <?php 
-    if (is_front_page()) {
-      ?>
-      
 
       <section id="services" class="max-container-width">
         <h3 class="services__heading">Leistungen</h3>
@@ -84,25 +78,8 @@
       </section>
 
       <?php include 'references.php';?>
-
-    <?php /*end if is front page*/ }
-    else/*if (is_page()) */
-    { /* if is normal custom page end */?>
     
-      <section id="maincontents" class="maxwidth-container">
-      <?php 
-      if (have_posts()) {
-        while (have_posts()) {
-          the_post();
-          the_title();
-          the_content();
-        }
-      }else{
-          echo "<p>nothing to show here... ~_~</p>";
-      }
-      ?>
-      </section>
-      <?php /* end if is normal custom page */ }?>
+      
     
   </main>
   <?php include 'footer.php';?>
