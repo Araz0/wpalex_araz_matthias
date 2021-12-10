@@ -57,7 +57,7 @@
         <h3 class="news__heading">News</h3>
         <div class="news__container">
           <?php
-            $news_query = new WP_Query( 'order=DESC&cat=2&posts_per_page=3' );
+            $news_query = new WP_Query( 'order=DESC&category_name=news&posts_per_page=3' );
             if ( $news_query->have_posts() ) :
               while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
                 <article class='news__container__item'>
