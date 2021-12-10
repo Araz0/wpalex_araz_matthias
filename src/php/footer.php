@@ -1,13 +1,30 @@
 <footer>
-    <nav class="footer__navigation">
-      <h4 class="footer__heading">&copy; Alex Mayer 2020</h4>
-      <div>
-        <a href="#">Impressum</a>
-        <span>|</span>
-        <a href="#">Datenschutzerkl&auml;rung</a>
-      </div>
-    </nav>
+    <?php
+      //   this is another way to display a menu with full control over the items.
+      $menu_name = 'footer-menu';
+      $locations = get_nav_menu_locations();
+      $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+      $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
+      ?>
+      <nav class="footer__navigation">
+      <h4 class="footer__heading">&copy; <?php echo get_bloginfo('name'); ?> 2020</h4>
+        <ul class="footer__navigation__list">
+          <?php
+          foreach ($menuitems as $key => $item):
+            $id = get_post_meta( $item->ID, '_menu_item_object_id', true );
+            $page = get_page( $id );
+            $link = get_page_link( $id ); 
 
+            if ($key != 0) {
+              echo "<span>|</span>";
+            }
+            ?>
+            <li class="footer__navigation__list__item">
+              <a href="<?php echo $link; ?>" class="title"><?php echo $page->post_title; ?></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+    </nav>
     <p class="footer__text">
       Demo-Wordpress-Seite im Rahmen der LV‚ Content Mangagement Systeme an
       der FH Salzburg von Araz Alhamdani und Matthias Oberholzer

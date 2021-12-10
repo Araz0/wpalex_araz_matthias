@@ -28,6 +28,10 @@ footer {
       justify-content: space-between;
     }
   }
+  .footer__navigation__list{
+    display: flex;
+    gap: 0.5em;
+  }
 
   .footer__subheading {
     margin-block: 1rem 0.25rem;

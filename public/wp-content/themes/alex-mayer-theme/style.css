@@ -560,6 +560,7 @@ section {
   line-height: 175%;
   color: #01b7f0;
 }
+
 footer {
   padding: 1rem;
   background-color: #01b7f0;
@@ -587,6 +588,10 @@ footer .footer__navigation {
     flex-direction: row;
     justify-content: space-between;
   }
+}
+footer .footer__navigation__list {
+  display: flex;
+  gap: 0.5em;
 }
 footer .footer__subheading {
   margin-block: 1rem 0.25rem;
