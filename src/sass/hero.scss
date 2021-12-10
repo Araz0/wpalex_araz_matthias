@@ -1,15 +1,22 @@
 #hero {
   width: 100%;
   height: clamp(14rem, 35vw, 30rem);
-  background-image: url('images/illuminated-keyboard.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+
+  .hero__thumbnail {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+
+    z-index: -1;
+  }
 
   .hero__heading {
     color: $blue;

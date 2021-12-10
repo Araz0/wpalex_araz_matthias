@@ -5,45 +5,29 @@
 
 <body>
   <?php wp_body_open();?>
-  <?php body_class(); ?>
-  <?php //get_header(); ?>
-  <?php
-  if (have_posts()) {
-      while (have_posts()) {
-          the_post();
-      }
-  } else {
-      echo "Kein Inhalt";
-  }
-  ?>
-
-  <?php include 'header.php';?>
+  <?php get_header(); ?>
   
   <main>
-    <section id="maincontents" class="maxwidth-container">
-
-      <?php 
-      if (have_posts()) {
-        while (have_posts()) {
-          the_post();
-          the_title();
-          the_content();
+    	<section id="hero" class="">
+        <?php
+        $thumbnail_Link = get_template_directory_uri()."/images/illuminated-keyboard.jpg";
+        if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+          $thumbnail_Link= get_the_post_thumbnail_url();
         }
-      }else{
-          echo "<p>nothing to show here... ~_~</p>";
-      }
-      ?>
-    </section>
+        echo '<img class="hero__thumbnail" src="'. $thumbnail_Link.'" alt="Page Thumbnail image">';
+        ?>
+        <?php if (is_front_page()) { ?>
+          <h2 class="hero__heading">
+            <span>Glänzende Ideen</span> <br />
+            <span>für leuchtende Augen</span>
+          </h2>
+          <button class="hero__button">Angebot einholen</button>
+        <?php } ?>
+      </section>
     <?php 
     if (is_front_page()) {
       ?>
-      <section id="hero" class="">
-        <h2 class="hero__heading">
-          <span>Glänzende Ideen</span> <br />
-          <span>für leuchtende Augen</span>
-        </h2>
-        <button class="hero__button">Angebot einholen</button>
-      </section>
+      
 
       <section id="services" class="max-container-width">
         <h3 class="services__heading">Leistungen</h3>
@@ -60,8 +44,7 @@
                   /* grab the url for the full size featured image */
                   $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                 ?>
-                <img class="services__container__block__image" src="<?php echo $featured_img_url ?>"
-                  alt="<?php the_title();?>" />
+                <img class="services__container__block__image" src="<?php echo $featured_img_url ?>"alt="<?php the_title();?>" />
                 <?php
               }
               ?>
@@ -102,7 +85,24 @@
 
       <?php include 'references.php';?>
 
-    <?php } //if is front page end ?>
+    <?php /*end if is front page*/ }
+    else/*if (is_page()) */
+    { /* if is normal custom page end */?>
+    
+      <section id="maincontents" class="maxwidth-container">
+      <?php 
+      if (have_posts()) {
+        while (have_posts()) {
+          the_post();
+          the_title();
+          the_content();
+        }
+      }else{
+          echo "<p>nothing to show here... ~_~</p>";
+      }
+      ?>
+      </section>
+      <?php /* end if is normal custom page */ }?>
     
   </main>
   <?php include 'footer.php';?>
