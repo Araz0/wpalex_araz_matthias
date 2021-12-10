@@ -17,13 +17,16 @@
         echo '<img class="hero__thumbnail" src="'. $thumbnail_Link.'" alt="Page Thumbnail image">';
         ?>
       </section>
-        <h2>This is a Page</h2>
+      
       <?php 
       if (have_posts()) {
         while (have_posts()) {
-          the_post();
-          the_title();
-          the_content();
+            the_post();
+            echo '<article class="post__container">';
+            echo '<h2>'.get_the_title().'</h2>';
+            the_content();
+
+            echo '</article>';
         }
       }else{
           echo "<p>nothing to show here... ~_~</p>";
