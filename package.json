@@ -11,8 +11,9 @@
     "build:images": "rsync -vaE --progress ./src/images/ ./public/wp-content/themes/alex-mayer-theme/images",
     "build:favicons": "rsync -vaE --progress ./src/favicons/ ./public/wp-content/themes/alex-mayer-theme/favicons",
     "build:fonts": "rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/alex-mayer-theme/fonts",
+    "build:files": "rsync -vaE --progress ./src/files/ ./public/wp-content/themes/alex-mayer-theme",
     "build": "npm-run-all build:*",
-    "buildall":"rsync -rvz --progress ./src/php/ ./public/wp-content/themes/alex-mayer-theme --delete && sass ./src/sass/index.scss ./public/wp-content/themes/alex-mayer-theme/style.css && esbuild ./src/js/index.js --bundle --outfile=./public/wp-content/themes/alex-mayer-theme/js/script.js && rsync -vaE --progress ./src/images/ ./public/wp-content/themes/alex-mayer-theme/images && rsync -vaE --progress ./src/favicons/ ./public/wp-content/themes/alex-mayer-theme/favicons && rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/alex-mayer-theme/fonts"
+    "buildall":"rsync -rvz --progress ./src/php/ ./public/wp-content/themes/alex-mayer-theme --delete && sass ./src/sass/index.scss ./public/wp-content/themes/alex-mayer-theme/style.css && esbuild ./src/js/index.js --bundle --outfile=./public/wp-content/themes/alex-mayer-theme/js/script.js && rsync -vaE --progress ./src/images/ ./public/wp-content/themes/alex-mayer-theme/images && rsync -vaE --progress ./src/favicons/ ./public/wp-content/themes/alex-mayer-theme/favicons && rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/alex-mayer-theme/fonts && rsync -vaE --progress ./src/files/ ./public/wp-content/themes/alex-mayer-theme"
   },
   "author": "",
   "license": "ISC",
