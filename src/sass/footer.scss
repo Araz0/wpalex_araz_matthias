@@ -6,20 +6,19 @@ footer {
   a {
     color: white;
   }
- 
 
-  h4,
-  nav,
-  p,
-  h5 {
+  .footer__heading,
+  .footer__navigation,
+  .footer__text,
+  .footer__subheading {
     font-size: 1rem;
   }
 
-  p {
+  .footer__text {
     line-height: 125%;
   }
 
-  nav {
+  .footer__navigation {
     margin-block: 0.25rem 1rem;
     display: flex;
     flex-direction: column;
@@ -34,15 +33,15 @@ footer {
     gap: 0.5em;
   }
 
-  h5 {
+  .footer__subheading {
     margin-block: 1rem 0.25rem;
 
-    & ~ p {
+    & ~ .footer__text {
       font-size: 0.8rem;
     }
   }
 
-  ul {
+  .footer__list {
     list-style-type: disc;
     margin-left: 1.5rem;
     li {
