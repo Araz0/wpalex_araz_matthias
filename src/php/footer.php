@@ -7,7 +7,7 @@
       $menuitems = wp_get_nav_menu_items( $menu->term_id, array( 'order' => 'DESC' ) );
       ?>
       <nav class="footer__navigation">
-      <h4 class="footer__heading">&copy; <?php echo get_bloginfo('name').' '.date("Y"); ?> 2020</h4>
+      <h4 class="footer__heading">&copy; <?php echo get_bloginfo('name').' '.date("Y"); ?></h4>
         <ul class="footer__navigation__list">
           <?php
           foreach ($menuitems as $key => $item):
