@@ -4,6 +4,9 @@ A repo for a Wordpress Project
 
 ## tracked ToDo
 
+[ ] add path to call to action btn in the index hero
+[ ] check space between sections
+[ ] fix grid design and fonts at front-page in refrences
 [x] add support for single pages
 [x] add support for blog post design
 [x] single pages content styling
@@ -17,7 +20,7 @@ A repo for a Wordpress Project
 [x] Each page has a hero image, which comes from the featured image (as an upload) in the backend.
 [ ] The hero text is a custom field and is different for each page
 [ ] Apart from the home page ('Startseite'), only the 'Über mich'-Page and the Contact-page has to be filled with contents. Leave all other pages empty (but add a hero image and a hero text).
-[ ] Use the plugin 'Contact Form 7' for the contact form on the contact page. Download the plugin and include it to your codebase.
+[x] Use the plugin 'Contact Form 7' for the contact form on the contact page. Download the plugin and include it to your codebase.
 [x] Use multiple loops for the front page:
     [x] Leistungen consists of the three latest posts of the category 'leistungen'. The SVG is the featured image of the post. The background color is set in your CSS.
     [x] News consists of the three latest posts of the category 'news'. Use the WP function the_excerpt() to show an excerpt of the contents.

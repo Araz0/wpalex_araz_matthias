@@ -561,6 +561,22 @@ section {
   color: #01b7f0;
 }
 
+.wpcf7-form {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+}
+.wpcf7-form br {
+  margin: 0.5em auto;
+}
+.wpcf7-form input[type=submit] {
+  cursor: pointer;
+  width: 9em;
+  padding: 0.5em 0.2em;
+  font-weight: bold;
+}
+
 footer {
   padding: 1rem;
   background-color: #01b7f0;

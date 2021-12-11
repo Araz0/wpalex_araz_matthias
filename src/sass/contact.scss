@@ -1,0 +1,15 @@
+.wpcf7-form {
+  gap: 0.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 1em auto;
+  br {
+    margin: 0.5em auto;
+  }
+  input[type="submit"] {
+    cursor: pointer;
+    width: 9em;
+    padding: 0.5em 0.2em;
+    font-weight: bold;
+  }
+}
