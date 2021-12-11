@@ -8,7 +8,7 @@
   <?php get_header(); ?>
   
   <main>
-    <section id="hero" class="">
+    <section id="hero">
       <?php
       $thumbnail_Link = get_template_directory_uri()."/images/illuminated-keyboard.jpg";
       if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -16,6 +16,9 @@
       }
       echo '<img class="hero__thumbnail" src="'. $thumbnail_Link.'" alt="Page Thumbnail image">';
       ?>
+      <h2 class="hero__heading">
+        <span><?php echo get_field('hero_text'); ?></span>
+      </h2>
     </section>
     
     <?php 
