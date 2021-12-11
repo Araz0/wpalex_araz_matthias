@@ -4,7 +4,7 @@ A repo for a Wordpress Project
 
 ## tracked ToDo
 
-[ ] add path to call to action btn in the index hero
+[x] add path to call to action btn in the index hero
 [x] check space between sections
 [ ] fix grid design and fonts at front-page in refrences
 [x] add support for single pages

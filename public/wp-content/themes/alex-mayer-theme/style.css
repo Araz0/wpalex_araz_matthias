@@ -154,7 +154,7 @@ button {
 
 .max-container-width {
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 2em auto;
 }
 
 h1 {
@@ -336,6 +336,7 @@ section {
   padding: 0.5rem 0.5rem;
   width: fit-content;
   border: none;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   #hero .hero__heading,
