@@ -18,7 +18,7 @@
       ?>
       <?php 
       $heroText = get_field('hero_text');
-      if (isset($heroText) || !empty($heroText)) {
+      if (isset($heroText) && !empty($heroText)) {
         echo '<h2 class="hero__heading">';
         echo '<span>'.get_field('hero_text').'</span>';
         echo '</h2>';
