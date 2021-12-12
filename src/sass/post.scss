@@ -6,4 +6,17 @@
         line-height: 175%;
         color: #01b7f0;
     }
+    p {
+        margin: 1em auto;
+    }
+    ul{
+        list-style: inherit;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+    }
+    img{
+        margin: 1em auto;
+    }
 }

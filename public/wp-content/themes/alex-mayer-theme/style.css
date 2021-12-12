@@ -561,6 +561,19 @@ section {
   line-height: 175%;
   color: #01b7f0;
 }
+.post__container p {
+  margin: 1em auto;
+}
+.post__container ul {
+  list-style: inherit;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+.post__container img {
+  margin: 1em auto;
+}
 
 .wpcf7-form {
   gap: 0.5em;

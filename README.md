@@ -7,6 +7,7 @@ A repo for a Wordpress Project
 [x] add path to call to action btn in the index hero
 [x] check space between sections
 [ ] fix grid design and fonts at front-page in refrences
+[ ] fix primlinks issue
 [x] add support for single pages
 [x] add support for blog post design
 [x] single pages content styling
@@ -16,10 +17,10 @@ A repo for a Wordpress Project
 [x] Use WP's menu feature for the main navigation and the footer navigation.
     [x] Main Menu - Dynamic
     [x] Footer Manu - Dynamic
-[ ] Create the five pages.
+[x] Create the five pages.
 [x] Each page has a hero image, which comes from the featured image (as an upload) in the backend.
 [x] The hero text is a custom field and is different for each page
-[ ] Apart from the home page ('Startseite'), only the 'Über mich'-Page and the Contact-page has to be filled with contents. Leave all other pages empty (but add a hero image and a hero text).
+[x] Apart from the home page ('Startseite'), only the 'Über mich'-Page and the Contact-page has to be filled with contents. Leave all other pages empty (but add a hero image and a hero text).
 [x] Use the plugin 'Contact Form 7' for the contact form on the contact page. Download the plugin and include it to your codebase.
 [x] Use multiple loops for the front page:
     [x] Leistungen consists of the three latest posts of the category 'leistungen'. The SVG is the featured image of the post. The background color is set in your CSS.
