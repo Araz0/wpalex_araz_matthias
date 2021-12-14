@@ -65,10 +65,10 @@
               while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
                 <article class='news__container__item'>
                   <h4>
-                    <a href="<?php the_permalink(); ?>">
-                    <?php the_title(); ?>
-                    </a> - 
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> - 
                     <?php the_excerpt(); ?>
+                    ...
+                    <a href="<?php the_permalink(); ?>">[mehr erfahren]</a>
                   </h4>
                   
                 </article>
